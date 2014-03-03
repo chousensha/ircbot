@@ -1,0 +1,28 @@
+
+# Simple Twisted IRC bot that logs channel activities to stdout or a specified file and replies to PMs with a random quote from a file
+
+Uses SSL connection
+
+usage: ircbot.py [-h] -n {freenode} -c CHANNEL [-f FILENAME]
+
+###### Twisted based IRC bot that logs channel messages #####
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -n {freenode}  Network / server name. Ex.: freenode
+  -c CHANNEL     Channel name. Ex.: awesomechannel
+  -f FILENAME    Name of the log file
+
+DEMO
+
+./ircbot.py -n freenode -c vim 
+conected at Mon Mar  3 13:27:02 2014
+Successfully joined the server at irc.freenode.net
+botster has joined #vim
+[01:28:10] <Leoneof> has joined #vim
+[01:28:13] <osse> causasui: :g/.../normal! gqq
+[PM]: [01:28:38] <psiblade> howdy
+[01:28:43] <pikaren> has quit for the reason: Quit: Lost terminal
+^C disconnected at Mon Mar  3 13:29:19 2014
+
+
